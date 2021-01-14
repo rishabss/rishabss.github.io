@@ -1,0 +1,27 @@
+body{
+	background-color:#d5e8f6;
+	font-family:Verdana,sans-serif; 
+}
+
+.button{
+	color:white;
+	background-color:green;
+	border:none;
+	padding:15px 32px;
+	font-size:1.5em; 
+	border-radius:10px; 
+	transition-duration:0.4s;
+	width:200px;
+	margin-bottom:20px;
+	outline:none;
+}
+
+.button:hover{
+	background-color:black;
+}
+#output{
+	width:600px;
+	height:200px;
+	border:thick solid #CC0000; 
+	padding:10px;
+}
