@@ -465,8 +465,9 @@ function blockWin() {
 				}
 				case 8 :if (document.getElementById("eight").innerHTML == "") {
 					document.getElementById("eight").innerHTML = currentPlayer;
-				}
 				break;
+				}
+				
 				case 9 : if (document.getElementById("nine").innerHTML == "") {
 					document.getElementById("nine").innerHTML = currentPlayer;
 				break;
