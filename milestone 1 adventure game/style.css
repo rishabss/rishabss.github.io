@@ -1,0 +1,122 @@
+body{
+	background-color:black;
+}
+#gameBoard{
+	border: 1px solid black;
+	display: grid;
+	grid-template-columns: 120px 120px 120px 120px 120px;
+	grid-template-rows: 120px 120px 120px 120px 120px;
+	justify-content: center;
+	width:600px;
+	height:600px;
+	
+	margin-left:auto;
+	margin-right: auto;
+}
+
+#gameBoard div{
+	background-color:#00EE00;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+
+.LaserGateVerticle{
+	background-image: url("images/LaserGateVerticle.png");
+}
+
+
+.LaserGateHorizontal{
+	background-image: url("images/LaserGateHorizontal.png");
+}
+
+.flag{
+	background-image: url("images/flag_red.png");
+}
+
+.wand{
+	background-image: url("images/wand.png");
+}
+
+.tree{
+	background-image: url("images/treeObsitcal.png");
+}
+.rocks{
+	background-image: url("images/rocksObsitcal.png");
+}
+
+.fenceVerticle{
+	background-image: url("images/fenceVerticle.png");
+}
+.fenceHorizontal{
+	background-image: url("images/fenceHorizontal.png");
+}
+
+.fenceVerticle{
+	background-image: url("images/fenceVerticle.png");
+}
+
+.fenceHorizontal{
+	background-image: url("images/fenceHorizontal.png");
+}
+
+.heroDown{
+	background-image:url("images/heroDown.png");
+}
+
+.heroUp{
+	background-image: url("images/heroUp.png");
+}
+.heroLeft{
+	background-image: url("images/heroLeft.png");
+}
+.heroRight{
+	background-image: url("images/heroRight.png");
+}
+.heroWandUp{
+	background-image: url("images/heroWandUp.png");
+}
+.heroWandDown{
+	background-image: url("images/heroWandDown.png");
+}
+.heroWandLeft{
+	background-image: url("images/heroWandLeft.png");
+}
+.heroWandRight{
+	background-image: url("images/heroWandRight.png");
+}
+
+.heroGateLeft{
+	background-image: url("images/heroGateLeft.png");
+}
+
+.heroGateRight{
+	background-image: url("images/heroGateRight.png");
+}
+
+.heroGateDown{
+	background-image: url("images/heroGateDown.png");
+}
+
+.heroGateUp{
+	background-image: url("images/heroGateUp.png");
+}
+
+.enemyDown{
+	background-image: url("images/enemyDown.png");
+}
+
+
+.enemyUp{
+	background-image: url("images/enemyUp.png");
+}
+
+
+.enemyLeft{
+	background-image: url("images/enemyLeft.png");
+}
+
+
+.enemyRight{
+	background-image: url("images/enemyRight.png");
+}
