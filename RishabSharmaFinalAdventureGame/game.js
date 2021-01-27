@@ -203,7 +203,7 @@ function keydownEventListener(e) {
 		//if it is an enemy 
 		if (nextClass.includes("enemy")) {
 			showLightBox("You lose", "" ,"Try Again?");	
-		startGame();
+		return;
 		}
 
 		if (oldClassName.includes("flag")) {
