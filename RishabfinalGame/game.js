@@ -284,14 +284,16 @@ function animateEnemy(boxes, index, direction){
 			boxes[i].classList.remove("enemyLeft");
 			boxes[i].classList.remove("enemyRight");
 		}//if 
-		nextClass = boxes[index].className;
+		
+	}//for
+	
+	nextClass = boxes[index].className;
 	if (nextClass.includes("hero") || nextClass.includes("heroWand")) {
 		clearTimeout(currentAnimation);
 		showLightBox("You lose", "", "Play Again?"); // end screen
 		return;
 	} // if
-		
-	}//for
+	
 	//moving right
 	if(direction == "right"){
 		//turn around if hit right side
