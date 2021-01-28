@@ -288,6 +288,7 @@ function animateEnemy(boxes, index, direction){
 	if (nextClass.includes("hero") || nextClass.includes("heroWand")) {
 		clearTimeout(currentAnimation);
 		showLightBox("You lose", "", "Play Again?"); // end screen
+		return;
 	} // if
 		
 	}//for
