@@ -36,6 +36,7 @@
 	var currentLocationOfHero = 0;
 	var currentAnimation; //allows 1 animation per level
 	var widthOfBoard = 5;
+	var nextClass;
 	//start game
 	window.addEventListener("load", function(){
 		showLightBox("Welcome to Hero Adventure!","The goal of the game is to reach the flag. Move around using the arrow keys. Dont get hit by the enemy. You can only pass through laser gates once you have colected your wand", "Play Game");
@@ -202,6 +203,7 @@ function keydownEventListener(e) {
 
 		//if it is an enemy 
 		if (nextClass.includes("enemy")) {
+			clearTimeout(currentAnimation);
 			showLightBox("You lose", "" ,"Try Again?");	
 		return;
 		}
@@ -282,6 +284,11 @@ function animateEnemy(boxes, index, direction){
 			boxes[i].classList.remove("enemyLeft");
 			boxes[i].classList.remove("enemyRight");
 		}//if 
+		nextClass = boxes[index].className;
+	if (nextClass.includes("hero") || nextClass.includes("heroWand")) {
+		clearTimeout(currentAnimation);
+		showLightBox("You lose", "", "Play Again?"); // end screen
+	} // if
 		
 	}//for
 	//moving right
